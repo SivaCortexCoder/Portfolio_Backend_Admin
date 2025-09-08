@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/Footer";
+import PersonalDetailEdit from "./pages/PersonalDetailEdit";
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/add-project" element={<Add />} />
           <Route path="/add-project/:id" element={<Add />} />
+          <Route path="/edit-details/:id" element={<PersonalDetailEdit/>}/>
         </Routes>
         <Footer/>
          <ToastContainer position="top-right" autoClose={3000} theme="colored" />

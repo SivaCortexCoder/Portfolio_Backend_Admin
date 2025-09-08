@@ -81,9 +81,9 @@ const ProjectAddForm = () => {
     }
   };
 
-  if(projects.length===0){
-    return <h1>No Projects Found..</h1>
-  }
+  // if(projects.length===0){
+  //   return <h1>No Projects Found..</h1>
+  // }
 
   return (
     <div className="min-h-screen  py-8 px-4">
@@ -347,7 +347,7 @@ const ProjectAddForm = () => {
                 <div>
                   <button
                     type="submit"
-                    className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                    className="px-8 py-3 cursor-pointer bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                   >
                     {id ? "Update Project" : "Publish Project"}
                   </button>
